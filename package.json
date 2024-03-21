@@ -1,0 +1,47 @@
+{
+  "name": "@unifyroom/insight-api",
+  "description": "A Unifyroom blockchain REST and WebSocket API Service",
+  "version": "4.0.5",
+  "repository": "git://github.com/unifyroom/insight-api.git",
+  "contributors": [],
+  "bugs": {
+    "url": "https://github.com/unifyroom/insight-api/issues"
+  },
+  "homepage": "https://github.com/unifyroom/insight-api",
+  "license": "MIT",
+  "keywords": [
+    "insight",
+    "insight api",
+    "blockchain",
+    "dash api",
+    "blockchain api",
+    "json",
+    "bitcore-dash",
+    "dashcore"
+  ],
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "test": "NODE_ENV=test mocha -R spec --recursive"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "@unifyroom/unfycore-lib": "^1.0.3",
+    "async": "^2.6.2",
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "lodash": "^4.17.20",
+    "lru-cache": "^5.1.1",
+    "morgan": "^1.9.1",
+    "request": "^2.88.0",
+    "wasm-yescryptr32-hash": "^1.0.5"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^10.0.0",
+    "proxyquire": "^1.8.0",
+    "should": "^13.2.3",
+    "sinon": "^7.3.2"
+  }
+}
