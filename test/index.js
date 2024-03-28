@@ -185,7 +185,7 @@ describe('Index', function() {
       };
       
 
-      await index.setupRoutes(app);
+      await index.setupRoutesAsync(app);
 
       use.callCount.should.be.above(0);
       use.args[0][0].should.equal(middlewareFunc);
